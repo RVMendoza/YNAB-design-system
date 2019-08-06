@@ -18,7 +18,11 @@
     "url": "https://github.com/RVMendoza/YNAB-design-system/issues"
   },
   "homepage": "https://github.com/RVMendoza/YNAB-design-system#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@mdx-js/react": "^1.1.4",
+    "theme-ui": "^0.2.25"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@storybook/addon-actions": "^5.1.10",
