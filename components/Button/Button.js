@@ -7,10 +7,12 @@ const Button = ({
 }) =>
   <div
     sx={{
-      fontWeight: 'bold',
+      px: '10px',
       fontSize: 4, // picks up value from `theme.fontSizes[4]`
-      color: 'primary', // picks up value from `theme.colors.primary`
+      variant: `buttons.${variant}`,
     }}>
     {props.children}
   </div>
+
+
 export default Button
