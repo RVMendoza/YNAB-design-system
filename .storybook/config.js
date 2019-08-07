@@ -1,4 +1,5 @@
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react';
+import React from 'react'
 import { ThemeProvider } from 'theme-ui'
 import Theme from './theme'
 
