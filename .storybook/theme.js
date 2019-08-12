@@ -28,7 +28,11 @@ export default {
       active: '#f5cd6e',
     },
   },
-
+  // typography import has extra double quotes which cancels font
+  fonts: {
+    body: "Source Sans Pro, sans-serif",
+    heading: "Source Sans Pro, sans-serif",
+  },
   buttons: {
     primary: {
       color: `main.white`,
