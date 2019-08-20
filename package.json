@@ -21,8 +21,7 @@
   "homepage": "https://github.com/RVMendoza/YNAB-design-system#readme",
   "dependencies": {
     "@emotion/core": "^10.0.14",
-    "@mdx-js/react": "^1.1.4",
-    "theme-ui": "^0.2.25"
+    "@mdx-js/react": "^1.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -33,6 +32,7 @@
     "@storybook/storybook-deployer": "^2.8.1",
     "@theme-ui/typography": "^0.2.29",
     "babel-loader": "^8.0.6",
+    "theme-ui": "^0.2.35",
     "typography-theme-moraga": "^0.16.19"
   }
 }
