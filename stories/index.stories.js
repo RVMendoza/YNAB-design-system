@@ -1,4 +1,6 @@
 import React from 'react';
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
@@ -10,13 +12,29 @@ import { YNABButton } from '../components/YNABComponents';
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
-  .add('with text', () =>
-    <YNABButton variant="primary" onClick={action('clicked')}>Hello Button</YNABButton>
+  .add('Primary', () =>
+    <YNABButton variant="primary">Button</YNABButton>
   )
-  .add('with some emoji', () => (
-    <YNABButton onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </YNABButton>
-  ));
+
+  .add('Hollow On Dark', () => (
+    <div
+      sx={{
+        backgroundColor: `main.dark`,
+        p: 3,
+      }}
+    >
+      <YNABButton variant="hollowOnDark">Button</YNABButton>
+    </div>
+  ))
+
+  .add('Hollow On Light', () =>
+    <div
+      sx={{
+        backgroundColor: `main.white`,
+      }}
+    >
+      <YNABButton variant="hollowOnLight">Button</YNABButton>
+    </div>
+  )
+
+  ;
